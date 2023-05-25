@@ -1,0 +1,61 @@
+body {
+  font-family: sans-serif;
+}
+
+/* PRODUCT */
+.product-info {
+  border: 5px solid black;
+}
+
+.product-name {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* PRODUCT INFORMATION */
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.shipping {
+  text-transform: uppercase;
+  color: grey;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* MUST SPECIFY ALL FOUR STATES */
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+/* PRODUCT DETAILS */
+.product-details-title {
+  text-transform: uppercase;
+}
+
+.product-details {
+  list-style: square;
+}
+
+/* ADD TO CARD BUTTON */
+.add-to-card-btn {
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.add-to-card-btn:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}

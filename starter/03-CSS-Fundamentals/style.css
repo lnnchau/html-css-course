@@ -1,0 +1,119 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-size: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center; /* center of its parent element */
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5; /* 1.5 times the font size */
+}
+
+li {
+  font-size: 20px;
+}
+
+/* footer p {
+  font-size: 16px;
+} */
+
+/* article header p {
+  font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #c2c2c2;
+}
+
+aside {
+  background-color: #c2c2c2;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-weight: italic;
+}
+
+li:nth-child(even) {
+  color: red;
+}
+
+/* Target anchor with href attribute */
+/* pseudo-class -> will have higher priority than 
+a {
+  color: red;
+} */
+a:link {
+  color: #1098ad;
+  text-decoration: none; /* remove underline */
+}
+
+/* Give visited link the same color */
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+
+/* When we click on the link */
+a:active {
+  background-color: green;
+  font-style: italic;
+}
