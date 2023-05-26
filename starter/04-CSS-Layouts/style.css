@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -124,8 +124,11 @@ li:last-child {
 }
 
 .related-author {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+
+  margin-bottom: 0;
 }
 
 /* ul {
@@ -197,10 +200,11 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: inline-block;
 }
 
+/* no need anymore thanks to flex */
 nav a:link:last-child {
   margin-right: 0;
 }
@@ -265,3 +269,83 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* FLOATS NOTES
+floated element would be taken completely
+out of flow -> recall position abolute
+as if it were not in the container
+other text and inline emlenets will wrap
+around the floated element */
+
+/* makes the image float to the left */
+/* .author-img {
+  float: left;
+} */
+
+/* so that the text component starting from the left of the image */
+/* .author {
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+} */
+
+/* parent elements will be collapsed since there's no children there (taken out of flow) */
+/* h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+} */
+
+/* FLEX */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+
+  margin-bottom: 5px;
+  display: block;
+}
+
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+
+  align-items: flex-start;
+}
+
+article {
+  flex: 1; /* allow this element to grow as much as possible */
+  margin-bottom: 0;
+}
+
+aside {
+  flex: 0 0 300px;
+  /* align-self: normal; */
+}
