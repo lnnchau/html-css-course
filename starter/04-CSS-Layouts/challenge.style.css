@@ -14,15 +14,10 @@ body {
   width: 825px;
   margin: 50px auto;
   position: relative;
-}
 
-.product-info-content {
-  display: flex;
-  gap: 40px;
-}
-
-.product-info {
-  flex: 1;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  column-gap: 40px;
 }
 
 .sale {
@@ -56,6 +51,8 @@ body {
   text-align: center;
   background-color: #f7f7f7;
   padding: 10px 40px;
+
+  grid-column: 1 / -1;
 }
 
 /* PRODUCT INFORMATION */
@@ -90,10 +87,6 @@ body {
 }
 
 /* PRODUCT DETAILS */
-.product-details {
-  flex: 1;
-}
-
 .product-details-title {
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -111,7 +104,7 @@ body {
 /* ADD TO CARD BUTTON */
 .add-to-card-btn {
   font-size: 20px;
-  width: 100%;
+  /* width: 100%; */
   padding: 10px 40px;
 
   color: white;
@@ -121,6 +114,8 @@ body {
 
   border: none;
   border-top: 4px solid black;
+
+  grid-column: 1 / -1;
 }
 
 .add-to-card-btn:hover {
