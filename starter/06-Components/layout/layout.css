@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: 80px 400px 1fr 250px;
+  grid-template-rows: 80px 1fr;
+}
+
+nav,
+aside,
+section,
+main {
+  padding-top: 24px;
+}
+
+nav {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+
+  background-color: darkslategrey;
+  color: white;
+}
+
+menu {
+  grid-column: 2 / span 3;
+  grid-row: 1 / span 1;
+
+  background-color: #7048e8;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 0 40px;
+}
+
+section {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+
+  background-color: #e9ecef;
+
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  overflow: scroll;
+}
+
+main {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+
+  background-color: #fff;
+}
+
+aside {
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+
+  background-color: #e9ecef;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #5f3dc4;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 8px 12px;
+
+  /* display: inline-block; */
+}
+
+.red-btn {
+  background-color: red;
+  margin-left: auto;
+}
+
+.email-btn {
+  background-color: #adb5bd;
+  height: 96px;
+
+  /* prevent the button from shrinking */
+  /* scrollbars will appear instead */
+  flex-shrink: 0;
+
+  /* center the text inside the button */
+  /* this works because the button is a flex container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
